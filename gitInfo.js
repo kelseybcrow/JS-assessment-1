@@ -11,6 +11,9 @@
 
 //CODE HERE
 
+let gitDefinition =
+  "a version control system that makes collaboration and backing up work easier and more effective";
+
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,6 +21,9 @@
 */
 
 //CODE HERE
+
+let gitHubDefinition =
+  "one of many services that use git for version control and collaboration";
 
 //////////////////PROBLEMS 3 - 8////////////////////
 /*
@@ -35,6 +41,11 @@
 
 //CODE HERE
 
+let init = {
+  description: "initializes a git repository on your local machine",
+  code: "git init",
+};
+
 //////////////////PROBLEM 4////////////////////
 /*
     Create an object called 'clone' with 'description' and 'code' properties 
@@ -42,6 +53,11 @@
 */
 
 //CODE HERE
+
+let clone = {
+  description: "clones a repo into a newly created directory",
+  code: "git clone",
+};
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -51,6 +67,11 @@
 
 //CODE HERE
 
+let status = {
+  description:
+    "shows you the status of your current working directory, if files need to be added or committed, if your working tree is clean, etc.",
+  code: "git status",
+};
 //////////////////PROBLEM 6////////////////////
 /*
     Create an object called 'add' with 'description' and 'code' properties 
@@ -58,6 +79,11 @@
 */
 
 //CODE HERE
+
+let add = {
+  description: "",
+  code: "git add .",
+};
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -67,6 +93,10 @@
 
 //CODE HERE
 
+let commit = {
+  description: "",
+  code: 'git commit -m "message"',
+};
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -75,3 +105,8 @@
 */
 
 //CODE HERE
+
+let push = {
+  description: "",
+  code: "git push",
+};
