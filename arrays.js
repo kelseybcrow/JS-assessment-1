@@ -43,3 +43,17 @@ console.log(middleNums);
 */
 
 // CODE HERE
+
+function bigOrSmall(arr) {
+  let answers = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr > 100) {
+      answers.push("big");
+    } else {
+      answers.push("small");
+    }
+  }
+
+  return answers;
+}
