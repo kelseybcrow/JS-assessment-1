@@ -10,10 +10,7 @@ console.log("Welcome!");
 
 reader.question("What password would you like to validate?", function (input) {
   tokens = input.split("");
-  // tokens = input;
-  console.log(tokens);
-  // console.log(input);
-  // tokens = input.split(" ");
+  // console.log(tokens);
 
   if (tokens.length >= 10) {
     console.log("Thank you, that works!");

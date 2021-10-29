@@ -57,3 +57,7 @@ function bigOrSmall(arr) {
 
   return answers;
 }
+
+console.log(bigOrSmall([101]));
+console.log(bigOrSmall([100]));
+console.log(bigOrSmall([99]));
