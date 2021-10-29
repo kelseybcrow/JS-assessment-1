@@ -9,7 +9,10 @@ const reader = readline.createInterface({
 console.log("Welcome!");
 
 reader.question("What password would you like to validate?", function (input) {
-  tokens = input.split();
+  tokens = input.split("");
+  // tokens = input;
+  console.log(tokens);
+  // console.log(input);
   // tokens = input.split(" ");
 
   if (tokens.length >= 10) {
