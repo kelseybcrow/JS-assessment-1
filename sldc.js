@@ -23,7 +23,8 @@ let analysisOfRequirements =
   "ironing out user expectations for a new product or feature, making sure the requirements are thorough, detailed, and quantifiable";
 let design =
   "coming up with the structure and interaction of the code, figuring out which functions, methods, objects, etc. that will be used";
-let implementation = "the actual writing of code";
+let implementation =
+  "the actual writing of code to build out the new prodcut or feature";
 let testingAndIntegration =
   "testing the code that has been written during implementation, oftentimes working with a QA team, integrating the new code with the current code";
 let maintain =

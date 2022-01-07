@@ -12,18 +12,31 @@ reader.question("What password would you like to validate?", function (input) {
   tokens = input.split("");
   // console.log(tokens);
 
-  if (tokens.length >= 10) {
-    console.log("Thank you, that works!");
-  } else {
-    console.log("Make sure your password is at least 10 characters long");
-  }
-  // mathSymbol = tokens[0];
-  // num1 = Number(tokens[1]);
-  // num2 = Number(tokens[2]);
+  let correctLength = false;
+  let correctLower = false;
+  let correctUpper = false;
+  let correctNumbers = false;
 
-  // console.log("mathSymbol", mathSymbol);
-  // console.log("num1", num1);
-  // console.log("num2", num2);
+  const lowerCaseLetters = /[a-z]/g;
+  const upperCaseLetters = /[A-Z]/g;
+  const numbers = /[0-9]/g;
+
+  let errorMessage = "";
+
+  if (tokens.length >= 10) {
+    correctLength = true;
+  } else {
+    errorMessage = "Your password needs at least 10 characters";
+  }
+
+  if (tokens)
+    if (
+      correctLength === true &&
+      correctLower === true &&
+      correctUpper === true
+    ) {
+      console.log("Thank you, your password is validated");
+    }
 
   // This line closes the connection to the command line interface.
   reader.close();

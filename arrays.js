@@ -48,7 +48,7 @@ function bigOrSmall(arr) {
   let answers = [];
 
   for (let i = 0; i < arr.length; i++) {
-    if (arr > 100) {
+    if (arr[i] > 100) {
       answers.push("big");
     } else {
       answers.push("small");
@@ -58,6 +58,4 @@ function bigOrSmall(arr) {
   return answers;
 }
 
-console.log(bigOrSmall([101]));
-console.log(bigOrSmall([100]));
-console.log(bigOrSmall([99]));
+console.log(bigOrSmall([101, 98, 50, 100, 102]));
