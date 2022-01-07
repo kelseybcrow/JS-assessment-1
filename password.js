@@ -10,7 +10,6 @@ console.log("Welcome!");
 
 reader.question("What password would you like to validate?", function (input) {
   tokens = input.split("");
-  // console.log(tokens);
 
   let correctLength = false;
   let correctLower = false;
@@ -34,24 +33,33 @@ reader.question("What password would you like to validate?", function (input) {
     errorMessage.concat(lengthError);
   }
 
-  if (tokens.value.match(lowerCaseLetters)) {
+  if (input.value.match(lowerCaseLetters)) {
     correctLower = true;
   } else {
     errorMessage.concat(lowerError);
   }
 
-  if (tokens.value.match(upperCaseLetters)) {
+  if (input.value.match(upperCaseLetters)) {
     correctUpper = true;
   } else {
     errorMessage.concat(upperError);
   }
 
+  if (input.value.match(numbers)) {
+    correctNumbers = true;
+  } else {
+    errorMessage.concat(numberError);
+  }
+
   if (
     correctLength === true &&
     correctLower === true &&
-    correctUpper === true
+    correctUpper === true &&
+    correctNumbers === true
   ) {
-    console.log("Thank you, your password is validated");
+    console.log(successMessage);
+  } else {
+    console.log(errorMessage);
   }
 
   // This line closes the connection to the command line interface.
